@@ -1,0 +1,20 @@
+{
+    "baseUrl": "https://demoqa.com/",
+    "blaclistHost": [
+        "*google-analytics.com",
+        "*quantserve.com",
+        "*googlesyndication.com"
+    ],
+    "message": "/cypress/fixtures/message.txt",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "overwrite": false,
+        "html": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+    },
+    "video": false
+}

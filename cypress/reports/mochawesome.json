@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-09T00:55:21.853Z",
+    "end": "2021-11-09T00:55:26.780Z",
+    "duration": 4927,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "01d2feae-279b-4765-a614-e05725758e49",
+      "title": "",
+      "fullFile": "cypress/integration/APIandUI-test/demoqa_test1.spec.js",
+      "file": "cypress/integration/APIandUI-test/demoqa_test1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a35f975a-13a4-4c87-a4d2-91b24da80ea0",
+          "title": "Navigate to main page successfully ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm the window.navigator.language",
+              "fullTitle": "Navigate to main page successfully  Confirm the window.navigator.language",
+              "timedOut": null,
+              "duration": 3069,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/').its('navigator.language') // yields window.navigator.language\n.should('equal', 'en-GB');",
+              "err": {},
+              "uuid": "243f2e45-4118-4a00-b7ac-ad9b3ec61c89",
+              "parentUUID": "a35f975a-13a4-4c87-a4d2-91b24da80ea0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Navigate to sub-pages successfully",
+              "fullTitle": "Navigate to main page successfully  Navigate to sub-pages successfully",
+              "timedOut": null,
+              "duration": 1646,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// loads elements page successfully\ncy.contains('Elements').eq(0).should('exist').click();\ncy.go(-1); // loads forms page successfully\ncy.contains('Forms').should('exist').click();\ncy.go(-1); // loads forms page successfully\ncy.contains('Alerts').should('exist').click();\ncy.go(-1); // loads widgets page successfully\ncy.contains('Widgets').should('exist').click();\ncy.go(-1); // loads interactions page successfully\ncy.contains('Interactions').should('exist').click();\ncy.go(-1); // loads Books Store Application page successfully\ncy.contains('Book').should('exist').click();\ncy.go(-1);",
+              "err": {},
+              "uuid": "af1bab0b-28e5-4ba6-81ab-2a2cb972a6fa",
+              "parentUUID": "a35f975a-13a4-4c87-a4d2-91b24da80ea0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Navigate to join page  successfully",
+              "fullTitle": "Navigate to main page successfully  Navigate to join page  successfully",
+              "timedOut": null,
+              "duration": 148,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('img[alt=\"Selenium Online Training\"]').should('exist').click();",
+              "err": {},
+              "uuid": "03fe284e-54f7-4f11-99d4-efbdf978c8b5",
+              "parentUUID": "a35f975a-13a4-4c87-a4d2-91b24da80ea0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "243f2e45-4118-4a00-b7ac-ad9b3ec61c89",
+            "af1bab0b-28e5-4ba6-81ab-2a2cb972a6fa",
+            "03fe284e-54f7-4f11-99d4-efbdf978c8b5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4863,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "overwrite": false,
+        "html": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

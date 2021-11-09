@@ -1,0 +1,29 @@
+{
+    "name": "spritecloudtest",
+    "version": "1.0.0",
+    "description": "UI and API test automation",
+    "main": "index.js",
+    "dependencies": {
+        "cypress": "^8.7.0",
+        "cypress-xpath": "^1.6.2"
+    },
+    "devDependencies": {
+        "cypress-multi-reporters": "^1.5.0",
+        "mochawesome": "^7.0.1",
+        "mochawesome-merge": "^4.2.0",
+        "mochawesome-report-generator": "^6.0.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JoelAdelubi/Spritecloudtest.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JoelAdelubi/Spritecloudtest/issues"
+    },
+    "homepage": "https://github.com/JoelAdelubi/Spritecloudtest#readme"
+}
